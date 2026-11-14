@@ -8,7 +8,7 @@ import { SectionTitle } from '../../components/section-title/section-title';
 import { ContentService } from '../../services/content.service';
 
 /** Create a free form at formspree.io and paste its link here. */
-const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORM_ENDPOINT = 'https://formspree.io/f/xjywgzkp';
 
 type SendStatus = 'idle' | 'sending' | 'sent' | 'error';
 
