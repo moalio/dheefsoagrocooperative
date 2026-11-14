@@ -1,0 +1,35 @@
+@if (site(); as siteInfo) {
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a routerLink="/" class="navbar__brand" (click)="closeMenu()">
+        <img [src]="siteInfo.logo" [alt]="siteInfo.name" />
+      </a>
+
+      <button
+        class="navbar__toggle"
+        type="button"
+        aria-label="Toggle menu"
+        aria-controls="main-menu"
+        [attr.aria-expanded]="menuOpen()"
+        (click)="toggleMenu()"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-menu" class="navbar__menu" aria-label="Main" [class.is-open]="menuOpen()">
+        @for (link of siteInfo.navigation; track link.path) {
+          <a
+            [routerLink]="link.path"
+            routerLinkActive="is-active"
+            [routerLinkActiveOptions]="{ exact: link.path === '/' }"
+            (click)="closeMenu()"
+          >
+            {{ link.label }}
+          </a>
+        }
+      </nav>
+    </div>
+  </header>
+}

@@ -1,0 +1,10 @@
+<article class="card">
+  @if (number() !== undefined) {
+    <span class="card__number">{{ number() }}</span>
+  }
+  <h3>{{ title() }}</h3>
+  <ng-content />
+  @if (link()) {
+    <a class="card__link" [routerLink]="link()" [fragment]="fragment()">{{ linkLabel() }} &rarr;</a>
+  }
+</article>

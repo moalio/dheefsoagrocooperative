@@ -1,0 +1,28 @@
+/* Notes under the two columns */
+.notes {
+  max-width: 820px;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem auto 0;
+  background: var(--green-100);
+  border-left: 5px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.notes p:last-child {
+  margin-bottom: 0;
+}
+
+/* Inclusion */
+.inclusion {
+  max-width: 820px;
+}
+
+.inclusion h3 {
+  margin-top: 1.5rem;
+  color: var(--green-700);
+}
+
+.inclusion__note {
+  margin-top: 1rem;
+  font-style: italic;
+}

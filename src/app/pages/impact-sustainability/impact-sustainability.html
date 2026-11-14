@@ -1,0 +1,126 @@
+<app-page-banner title="Impact and Sustainability" />
+
+@if (impact(); as data) {
+  <!-- Environmental and social responsibility -->
+  <section class="section">
+    <div class="container text-block">
+      <app-section-title [title]="data.responsibility.title" align="left" />
+
+      @for (paragraph of data.responsibility.intro; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+      @if (data.responsibility.listHeading) {
+        <h3>{{ data.responsibility.listHeading }}</h3>
+      }
+
+      <ul class="list-check list-columns">
+        @for (item of data.responsibility.items; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+
+      @for (note of data.responsibility.notes; track $index) {
+        <p class="note">{{ note }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Monitoring, evaluation and learning -->
+  <section class="section section--alt">
+    <div class="container text-block">
+      <app-section-title [title]="data.monitoring.title" align="left" />
+
+      @for (paragraph of data.monitoring.intro; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+      @if (data.monitoring.listHeading) {
+        <h3>{{ data.monitoring.listHeading }}</h3>
+      }
+
+      <ul class="list-check">
+        @for (item of data.monitoring.items; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+
+      @for (note of data.monitoring.notes; track $index) {
+        <p class="note">{{ note }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Risk management -->
+  <section class="section">
+    <div class="container">
+      <app-section-title [title]="data.riskManagement.title" [subtitle]="data.riskManagement.intro" />
+
+      <div class="table-wrap risks">
+        <table>
+          <thead>
+            <tr>
+              <th>Risk</th>
+              <th>Proposed Management Approach</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (row of data.riskManagement.risks; track row.risk) {
+              <tr>
+                <td data-label="Risk">
+                  <strong>{{ row.risk }}</strong>
+                </td>
+                <td data-label="Proposed Management Approach">{{ row.approach }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+
+      @for (note of data.riskManagement.notes; track $index) {
+        <p class="note note--center">{{ note }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Sustainability strategy -->
+  <section class="section section--alt">
+    <div class="container">
+      <app-section-title [title]="data.sustainability.title" [subtitle]="data.sustainability.intro.join(' ')" />
+
+      <div class="grid grid--3 dimensions">
+        @for (dimension of data.sustainability.dimensions; track dimension.id) {
+          <app-card [title]="dimension.title" [number]="dimension.number">
+            <p>{{ dimension.description }}</p>
+          </app-card>
+        }
+      </div>
+
+      @for (note of data.sustainability.notes; track $index) {
+        <p class="note note--center">{{ note }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Organizational development priorities -->
+  <section class="section">
+    <div class="container">
+      <app-section-title
+        [title]="data.developmentPriorities.title"
+        [subtitle]="data.developmentPriorities.intro.join(' ')"
+      />
+
+      <p class="priorities__heading">{{ data.developmentPriorities.listHeading }}</p>
+
+      <div class="grid grid--4">
+        @for (priority of data.developmentPriorities.priorities; track priority.title; let i = $index) {
+          <app-card [title]="priority.title" [number]="i + 1">
+            <p>{{ priority.description }}</p>
+          </app-card>
+        }
+      </div>
+
+      @for (note of data.developmentPriorities.notes; track $index) {
+        <p class="note note--center">{{ note }}</p>
+      }
+    </div>
+  </section>
+}

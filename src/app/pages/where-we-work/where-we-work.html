@@ -1,0 +1,113 @@
+<app-page-banner title="Where We Work" />
+
+@if (work(); as data) {
+  <!-- Featured focus area -->
+  <section class="section">
+    <div class="container">
+      <app-section-title [title]="data.primaryFocus.title" />
+
+      <div class="featured">
+        <div class="featured__badge">Afgoye, Lower Shabelle Region</div>
+
+        @for (paragraph of data.primaryFocus.intro; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+
+        @if (data.primaryFocus.listHeading) {
+          <h3>{{ data.primaryFocus.listHeading }}</h3>
+        }
+
+        <ol class="priorities">
+          @for (item of data.primaryFocus.items; track $index) {
+            <li>{{ item }}</li>
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community approach and expansion -->
+  <section class="section section--alt">
+    <div class="container grid grid--2">
+      <app-card [title]="data.communityApproach.title">
+        @for (paragraph of data.communityApproach.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </app-card>
+
+      <app-card [title]="data.geographicExpansion.title">
+        @for (paragraph of data.geographicExpansion.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </app-card>
+    </div>
+  </section>
+
+  <!-- Community participation -->
+  <section class="section">
+    <div class="container text-block">
+      <app-section-title [title]="data.communityParticipation.title" align="left" />
+
+      @for (paragraph of data.communityParticipation.intro; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+      @if (data.communityParticipation.listHeading) {
+        <h3>{{ data.communityParticipation.listHeading }}</h3>
+      }
+
+      <ul class="list-check">
+        @for (item of data.communityParticipation.items; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+
+      @for (note of data.communityParticipation.notes; track $index) {
+        <p class="note">{{ note }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Partnerships -->
+  <section class="section section--alt">
+    <div class="container text-block">
+      <app-section-title [title]="data.partnerships.title" align="left" />
+
+      @for (paragraph of data.partnerships.intro; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+      @if (data.partnerships.listHeading) {
+        <h3>{{ data.partnerships.listHeading }}</h3>
+      }
+
+      <ul class="list-check">
+        @for (item of data.partnerships.items; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+
+      @for (note of data.partnerships.notes; track $index) {
+        <p class="note">{{ note }}</p>
+      }
+    </div>
+  </section>
+}
+
+<!-- Field video and photos -->
+@if (fieldVideo || galleryImages.length) {
+  <section class="section">
+    <div class="container">
+      <app-section-title title="From the Field" />
+
+      @if (fieldVideo) {
+        <div class="media">
+          <app-video-player [src]="fieldVideo" />
+        </div>
+      }
+      @if (galleryImages.length) {
+        <div class="media">
+          <app-gallery [images]="galleryImages" />
+        </div>
+      }
+    </div>
+  </section>
+}

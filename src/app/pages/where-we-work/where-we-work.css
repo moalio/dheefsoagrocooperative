@@ -1,0 +1,94 @@
+.text-block {
+  max-width: 820px;
+}
+
+.text-block h3 {
+  margin-top: 1.5rem;
+  color: var(--green-700);
+}
+
+/* Featured focus area */
+.featured {
+  max-width: 900px;
+  padding: 2rem;
+  margin-inline: auto;
+  background: var(--white);
+  border: 2px solid var(--green-500);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.featured__badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--green-900);
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+.featured h3 {
+  margin-top: 1.5rem;
+  color: var(--green-700);
+}
+
+/* The 8 local priorities */
+.priorities {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: priority;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.priorities li {
+  position: relative;
+  padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+  background: var(--green-100);
+  border-radius: var(--radius);
+  counter-increment: priority;
+}
+
+.priorities li::before {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  display: grid;
+  width: 1.9rem;
+  height: 1.9rem;
+  place-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+  content: counter(priority);
+  background: var(--green-700);
+  border-radius: 50%;
+}
+
+/* Notes */
+.note {
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  font-style: italic;
+  background: var(--green-100);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.media {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 760px) {
+  .priorities {
+    grid-template-columns: 1fr;
+  }
+
+  .featured {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,96 @@
+@if (about(); as data) {
+  <!-- About -->
+  <section class="about">
+    <div class="container about__grid">
+      <div class="titlepage" appReveal>
+        <span>About Us</span>
+        <h2>DHEEFSO AGRO COOPERATIVE</h2>
+        @for (paragraph of data.background; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+
+      <div class="about__images" appReveal [appRevealDelay]="150">
+        <figure class="about__img about__img--tall">
+          <img [src]="aboutImages[0]" alt="Crop production" />
+        </figure>
+        <figure class="about__img">
+          <img [src]="aboutImages[1]" alt="Livestock" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizational Overview -->
+  <section class="section section--alt">
+    <div class="container">
+      <app-section-title title="Organizational Overview" />
+
+      <div class="grid grid--3">
+        @for (row of data.overview; track row.item; let i = $index) {
+          <div class="fact" appReveal [appRevealDelay]="(i % 3) * 120">
+            <span class="fact__label">{{ row.item }}</span>
+            <p class="fact__value">{{ row.description }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2">
+        <app-card title="Vision">
+          <p>{{ data.vision }}</p>
+        </app-card>
+        <app-card title="Mission">
+          <p>{{ data.mission }}</p>
+        </app-card>
+      </div>
+
+      <div class="tagline">
+        <h3>{{ data.tagline.text }}</h3>
+        <p>{{ data.tagline.note }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section section--alt">
+    <div class="container">
+      <app-section-title title="Core Values" />
+
+      <div class="grid grid--3">
+        @for (value of data.coreValues; track value.title; let i = $index) {
+          <app-card [title]="value.title" [number]="i + 1">
+            <p>{{ value.description }}</p>
+          </app-card>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Overall Goal and Strategic Objectives -->
+  <section class="section">
+    <div class="container">
+      <app-section-title title="Overall Goal" />
+      <p class="goal">{{ data.overallGoal }}</p>
+
+      <app-section-title title="Strategic Objectives" />
+      <ol class="objectives">
+        @for (objective of data.strategicObjectives; track $index) {
+          <li>{{ objective }}</li>
+        }
+      </ol>
+    </div>
+  </section>
+}
+
+<!-- Photo gallery -->
+@if (galleryImages.length) {
+  <section class="section section--alt">
+    <div class="container">
+      <app-section-title title="Our Cooperative and Members" />
+      <app-gallery [images]="galleryImages" />
+    </div>
+  </section>
+}

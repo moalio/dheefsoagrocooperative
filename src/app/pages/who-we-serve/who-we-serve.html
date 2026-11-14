@@ -1,0 +1,70 @@
+<app-page-banner title="Who We Serve" image="/assets/images/farmer-and-boy.jpg" />
+
+@if (serve(); as data) {
+  <!-- Beneficiaries -->
+  <section class="section">
+    <div class="container">
+      <app-section-title title="Target Beneficiaries" [subtitle]="data.intro" />
+
+      <div class="grid grid--2">
+        <app-card title="Primary Beneficiaries">
+          <ul class="list-check">
+            @for (item of data.primaryBeneficiaries; track $index) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </app-card>
+
+        <app-card title="Secondary Beneficiaries">
+          <ul class="list-check">
+            @for (item of data.secondaryBeneficiaries; track $index) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </app-card>
+      </div>
+
+      <div class="notes">
+        @for (note of data.notes; track $index) {
+          <p>{{ note }}</p>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Gender equality, youth and inclusion -->
+  <section class="section section--alt">
+    <div class="container inclusion">
+      <app-section-title [title]="data.inclusion.title" />
+
+      @for (paragraph of data.inclusion.intro; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+
+      @if (data.inclusion.listHeading) {
+        <h3>{{ data.inclusion.listHeading }}</h3>
+      }
+
+      <ul class="list-check">
+        @for (item of data.inclusion.items; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+
+      @for (note of data.inclusion.notes; track $index) {
+        <p class="inclusion__note">{{ note }}</p>
+      }
+    </div>
+  </section>
+}
+
+<!-- Photos -->
+@if (galleryImages.length) {
+  <section class="section">
+    <div class="container">
+      <app-section-title title="Farmers, Women and Youth" />
+      <app-gallery [images]="galleryImages" />
+    </div>
+  </section>
+}
+

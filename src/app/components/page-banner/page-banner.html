@@ -1,0 +1,12 @@
+<section
+  class="page-banner"
+  [class.page-banner--image]="image()"
+  [style.background-image]="image() ? 'url(' + image() + ')' : null"
+>
+  <div class="container">
+    <h1>{{ title() }}</h1>
+    @if (subtitle()) {
+      <p>{{ subtitle() }}</p>
+    }
+  </div>
+</section>

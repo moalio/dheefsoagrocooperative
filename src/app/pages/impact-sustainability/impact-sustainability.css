@@ -1,0 +1,98 @@
+.text-block {
+  max-width: 820px;
+}
+
+.text-block h3,
+.priorities__heading {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  color: var(--green-700);
+}
+
+.priorities__heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.list-columns {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.list-columns li {
+  break-inside: avoid;
+}
+
+/* Notes */
+.note {
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  font-style: italic;
+  background: var(--green-100);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.note--center {
+  max-width: 820px;
+  margin: 2rem auto 0;
+}
+
+.risks td:first-child {
+  width: 34%;
+}
+
+.dimensions {
+  align-items: stretch;
+}
+
+/* Risk table on phones: each row becomes a small card */
+@media (max-width: 640px) {
+  .list-columns {
+    columns: 1;
+  }
+
+  .risks {
+    border: 0;
+  }
+
+  .risks table,
+  .risks tbody,
+  .risks tr,
+  .risks td {
+    display: block;
+    width: 100%;
+  }
+
+  .risks thead {
+    display: none;
+  }
+
+  .risks tr {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+
+  .risks td:first-child {
+    width: 100%;
+    color: var(--white);
+    background: var(--green-700);
+  }
+
+  .risks td {
+    border-bottom: 0;
+  }
+
+  .risks td:last-child::before {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--green-700);
+    text-transform: uppercase;
+    content: attr(data-label);
+  }
+}

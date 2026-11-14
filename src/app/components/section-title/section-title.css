@@ -1,0 +1,38 @@
+
+:host {
+  display: block;
+}
+.heading {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.heading h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Gold bar under the title */
+.heading h2::after {
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 0.6rem auto 0;
+  content: '';
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.heading p {
+  max-width: 720px;
+  margin: 0.75rem auto 0;
+  color: var(--text-muted);
+}
+
+.heading--left {
+  text-align: left;
+}
+
+.heading--left h2::after,
+.heading--left p {
+  margin-left: 0;
+}

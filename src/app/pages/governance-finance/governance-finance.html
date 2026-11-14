@@ -1,0 +1,145 @@
+<app-page-banner title="Governance and Finance" />
+
+@if (governance(); as data) {
+  <!-- Structure diagram -->
+  <section class="section">
+    <div class="container">
+      <app-section-title title="Organizational Governance and Management" [subtitle]="data.intro" />
+
+      <div class="structure" aria-label="Organizational structure">
+        @for (body of data.governanceBodies; track body.id) {
+          <div class="structure__box">{{ body.title }}</div>
+          <span class="structure__arrow" aria-hidden="true">&darr;</span>
+        }
+
+        <div class="structure__box structure__box--light">{{ data.departments.title }}</div>
+
+        <div class="structure__departments">
+          @for (item of data.departments.items; track $index) {
+            <div class="structure__department">{{ item }}</div>
+          }
+        </div>
+      </div>
+
+      @if (data.departments.listHeading) {
+        <p class="structure__caption">{{ data.departments.listHeading }}</p>
+      }
+      @for (note of data.departments.notes; track $index) {
+        <p class="structure__caption">{{ note }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Responsibilities of each body -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="grid grid--3">
+        @for (body of data.governanceBodies; track body.id) {
+          <app-card [title]="body.title">
+            @for (paragraph of body.intro; track $index) {
+              <p>{{ paragraph }}</p>
+            }
+            @if (body.listHeading) {
+              <p>
+                <strong>{{ body.listHeading }}</strong>
+              </p>
+            }
+            <ul class="list-check">
+              @for (item of body.items; track $index) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </app-card>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Financial management -->
+  <section class="section">
+    <div class="container text-block">
+      <app-section-title [title]="data.financialManagement.title" align="left" />
+
+      @for (paragraph of data.financialManagement.intro; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+      @if (data.financialManagement.listHeading) {
+        <h3>{{ data.financialManagement.listHeading }}</h3>
+      }
+
+      <ul class="list-check list-columns">
+        @for (item of data.financialManagement.items; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+
+      @for (note of data.financialManagement.notes; track $index) {
+        <p class="note">{{ note }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Official registration -->
+  <section class="section registration" id="registration">
+    <div class="container">
+      <app-section-title title="Official Registration" />
+
+      <div class="certificate">
+        <a
+          class="certificate__image"
+          [href]="certificate.pdf"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open the registration certificate as a PDF"
+        >
+          <img
+            [src]="certificate.image"
+            alt="Cooperative registration certificate issued by the Ministry of Agriculture and Irrigation"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="certificate__details">
+          <h3>Cooperative registration certificate</h3>
+          <dl>
+            <dt>Certificate number</dt>
+            <dd>{{ certificate.number }}</dd>
+            <dt>Issued by</dt>
+            <dd>{{ certificate.issuer }}</dd>
+            <dt>Issue date</dt>
+            <dd>{{ certificate.issued }}</dd>
+            <dt>Valid until</dt>
+            <dd>{{ certificate.validUntil }}</dd>
+            <dt>Authorized to operate in</dt>
+            <dd>{{ certificate.location }}</dd>
+          </dl>
+          <a class="btn" [href]="certificate.pdf" target="_blank" rel="noopener">View certificate (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supporting documents -->
+  <section class="section section--alt">
+    <div class="container text-block">
+      <app-section-title [title]="data.supportingDocuments.title" align="left" />
+
+      @for (paragraph of data.supportingDocuments.intro; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+      @if (data.supportingDocuments.listHeading) {
+        <h3>{{ data.supportingDocuments.listHeading }}</h3>
+      }
+
+      <ol class="documents">
+        @for (item of data.supportingDocuments.items; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ol>
+
+      @for (note of data.supportingDocuments.notes; track $index) {
+        <p class="note">{{ note }}</p>
+      }
+    </div>
+  </section>
+}

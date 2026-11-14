@@ -1,0 +1,25 @@
+:host {
+  display: block;
+}
+
+.card {
+  height: 100%;
+}
+
+.card__number {
+  display: inline-block;
+  min-width: 2.2rem;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--green-900);
+  text-align: center;
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+.card__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}

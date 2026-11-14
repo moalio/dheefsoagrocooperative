@@ -1,0 +1,898 @@
+{
+  "site": {
+    "name": "DHEEFSO AGRO COOPERATIVE",
+    "tagline": "Growing Together, Prosperity for All",
+    "sectors": [
+      "Agriculture",
+      "Livestock",
+      "Environmental Conservation",
+      "Water Management",
+      "Rural Development"
+    ],
+    "country": "Federal Republic of Somalia",
+    "logo": "/assets/images/logo.png",
+    "navigation": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "About Us",
+        "path": "/about-us"
+      },
+      {
+        "label": "What We Do",
+        "path": "/what-we-do"
+      },
+      {
+        "label": "Who We Serve",
+        "path": "/who-we-serve"
+      },
+      {
+        "label": "Where We Work",
+        "path": "/where-we-work"
+      },
+      {
+        "label": "Governance and Finance",
+        "path": "/governance-finance"
+      },
+      {
+        "label": "Impact and Sustainability",
+        "path": "/impact-sustainability"
+      },
+      {
+        "label": "Contact Us",
+        "path": "/contact-us"
+      }
+    ],
+    "contact": {
+      "address": "Jaran Village, Afgooye District, Lower Shabelle Region, Somalia",
+      "phones": [
+        "+252616666338",
+        "+252624000026",
+      "+254725055960"
+      ],
+      "email": "info@dheefsoagrocooperatitve.com"
+    }
+  },
+  "home": {
+    "executiveSummary": [
+      "DHEEFSO AGRO COOPERATIVE is an agricultural cooperative focused on strengthening agricultural production, improving rural livelihoods, promoting food security, protecting natural resources and expanding economic opportunities for farming communities in Somalia.",
+      "The cooperative aims to bring farmers, livestock keepers, women, young people and rural households together to improve access to agricultural knowledge, quality inputs, farming technologies, water-management solutions, livestock services and agricultural markets.",
+      "DHEEFSO recognizes that Somalia's agricultural sector faces persistent challenges, including recurrent droughts, flooding, irregular rainfall, soil degradation, water scarcity, limited agricultural infrastructure, post-harvest losses and restricted access to reliable markets. These challenges affect agricultural productivity, household incomes, food availability and the long-term sustainability of rural communities.",
+      "In response, DHEEFSO promotes an integrated approach to agricultural development that combines productive farming systems with ecosystem restoration, responsible water management, soil conservation, sustainable livestock production and active community participation.",
+      "The cooperative places particular emphasis on supporting local agricultural communities, including farmers and livestock-dependent households in Afgoye and surrounding areas of Lower Shabelle region. Its approach seeks to strengthen local production systems while protecting the land, water, vegetation and other natural resources on which rural livelihoods depend.",
+      "Through cooperation, technical capacity-building, responsible resource management and market-oriented agricultural development, DHEEFSO aims to contribute to a more productive, inclusive, sustainable and climate-resilient agricultural sector in Somalia."
+    ]
+  },
+  "aboutUs": {
+    "overview": [
+      {
+        "item": "Organization Name",
+        "description": "DHEEFSO AGRO COOPERATIVE"
+      },
+      {
+        "item": "Organization Type",
+        "description": "Agricultural Cooperative"
+      },
+      {
+        "item": "Country of Operation",
+        "description": "Somalia"
+      },
+      {
+        "item": "Primary Local Focus",
+        "description": "Afgoye, Lower Shabelle Region"
+      },
+      {
+        "item": "Sector",
+        "description": "Agriculture and Rural Development"
+      },
+      {
+        "item": "Related Areas",
+        "description": "Livestock, Water Management, Environmental Conservation and Agribusiness"
+      },
+      {
+        "item": "Primary Beneficiaries",
+        "description": "Smallholder farmers, livestock keepers, women, youth and rural households"
+      },
+      {
+        "item": "Operating Approach",
+        "description": "Cooperative, community-based and environmentally responsible agricultural development"
+      },
+      {
+        "item": "Tagline",
+        "description": "Growing Together, Prosperity for All"
+      },
+      {
+        "item": "Geographic Expansion",
+        "description": "Other suitable agricultural communities, subject to capacity and local partnerships"
+      },
+      {
+        "item": "Registration Number",
+        "description": "To be completed from official records"
+      },
+      {
+        "item": "Year Established",
+        "description": "To be confirmed"
+      },
+      {
+        "item": "Membership",
+        "description": "To be confirmed"
+      },
+      {
+        "item": "Official Address",
+        "description": "To be completed"
+      },
+      {
+        "item": "Telephone and Email",
+        "description": "To be completed"
+      }
+    ],
+    "background": [
+      "Agriculture and livestock production are essential to the livelihoods of many Somali households. They provide food, income, employment and opportunities for local enterprise development.",
+      "However, rural agricultural communities face a combination of environmental, technical and economic constraints. These include declining soil fertility, land degradation, inadequate water infrastructure, changing rainfall patterns, and limited access to agricultural extension services, poor storage facilities and difficulties connecting producers to profitable markets.",
+      "Environmental degradation can further weaken agricultural systems by reducing vegetation cover, increasing erosion, affecting soil moisture and placing pressure on water resources.",
+      "DHEEFSO AGRO COOPERATIVE recognizes that agricultural productivity and environmental sustainability are closely connected. Farming systems cannot remain productive over the long term without responsible management of soil, water, vegetation and surrounding ecosystems.",
+      "The cooperative therefore seeks to support practical agricultural solutions that improve production while protecting the natural resource base. These solutions include climate-informed farming, appropriate irrigation, soil conservation, livestock and fodder development, agricultural diversification, community-led environmental management and stronger market linkages.",
+      "By working with local communities and relevant technical institutions, DHEEFSO aims to address agricultural challenges in ways that are locally appropriate, economically viable and environmentally responsible."
+    ],
+    "vision": "To become a trusted agricultural cooperative contributing to a productive, sustainable and climate-resilient agricultural sector in Somalia, where farming communities prosper while natural resources are protected for future generations.",
+    "mission": "To improve agricultural productivity, strengthen rural livelihoods and promote food security through sustainable crop production, livestock development, responsible water management, ecosystem restoration, farmer training, community participation and improved access to agricultural markets.",
+    "tagline": {
+      "text": "Growing Together, Prosperity for All",
+      "note": "The tagline reflects DHEEFSO's commitment to cooperation, shared economic opportunity, community participation and long-term agricultural development."
+    },
+    "coreValues": [
+      {
+        "title": "Sustainability",
+        "description": "Promoting agricultural practices that maintain productive land and protect natural resources."
+      },
+      {
+        "title": "Integrity",
+        "description": "Supporting transparent decisions, responsible management and honest communication."
+      },
+      {
+        "title": "Cooperation",
+        "description": "Encouraging collective action, shared learning and mutual support among members and farming communities."
+      },
+      {
+        "title": "Environmental Responsibility",
+        "description": "Protecting soil, water, vegetation and biodiversity through appropriate agricultural practices."
+      },
+      {
+        "title": "Inclusion",
+        "description": "Promoting fair opportunities for women, youth and underserved rural households."
+      },
+      {
+        "title": "Innovation",
+        "description": "Encouraging practical technologies and locally appropriate agricultural solutions."
+      },
+      {
+        "title": "Accountability",
+        "description": "Maintaining clear responsibilities, documented decisions and responsible use of organizational resources."
+      },
+      {
+        "title": "Resilience",
+        "description": "Strengthening the capacity of farmers and rural communities to manage droughts, floods and other agricultural risks."
+      },
+      {
+        "title": "Quality",
+        "description": "Promoting reliable agricultural services, appropriate inputs and improved production standards."
+      }
+    ],
+    "overallGoal": "To contribute to sustainable agricultural development and improved rural livelihoods in Somalia by integrating agricultural production, environmental conservation, responsible water management and community participation.",
+    "strategicObjectives": [
+      "Improve access to agricultural knowledge, quality inputs, appropriate technologies and extension services.",
+      "Promote productive and climate-resilient crop and horticultural systems.",
+      "Strengthen sustainable livestock production, fodder development and integrated crop-livestock farming.",
+      "Improve soil fertility, soil conservation and sustainable land management.",
+      "Promote efficient water use and appropriate irrigation systems.",
+      "Support restoration and protection of degraded agricultural land and suitable local ecosystems.",
+      "Strengthen food security, household incomes and rural employment.",
+      "Expand agricultural storage, processing, packaging and market access.",
+      "Increase participation of women and youth in farming and agribusiness.",
+      "Develop practical partnerships with agricultural institutions, local authorities, research organizations and private-sector actors.",
+      "Strengthen cooperative governance, financial management and institutional capacity.",
+      "Establish monitoring systems to assess agricultural, environmental and socioeconomic outcomes."
+    ]
+  },
+  "whatWeDo": {
+    "areas": [
+      {
+        "id": "crop-production-and-horticulture",
+        "number": "7.1",
+        "title": "Crop Production and Horticulture",
+        "intro": [
+          "DHEEFSO aims to support improved crop production through appropriate agricultural techniques, better crop planning, soil management and locally suitable farming systems."
+        ],
+        "listHeading": "Potential activities include:",
+        "items": [
+          "Cereal and staple food production.",
+          "Maize and sorghum cultivation.",
+          "Sesame, cowpea and groundnut production.",
+          "Vegetable and horticultural farming.",
+          "Fruit production where suitable.",
+          "Crop diversification and seasonal planning.",
+          "Appropriate seed selection and seed quality awareness.",
+          "Demonstration plots and farmer-to-farmer learning.",
+          "Integrated crop management.",
+          "Sustainable use of fertilizers and other agricultural inputs."
+        ],
+        "notes": [
+          "Crop selection will be guided by local agroecological conditions, seasonal rainfall, soil suitability, water availability and market demand."
+        ]
+      },
+      {
+        "id": "sustainable-land-management-and-ecosystem-restoration",
+        "number": "7.2",
+        "title": "Sustainable Land Management and Ecosystem Restoration",
+        "intro": [
+          "DHEEFSO recognizes the importance of maintaining healthy land and functioning ecosystems to support agricultural productivity."
+        ],
+        "listHeading": "The cooperative intends to promote:",
+        "items": [
+          "Soil conservation and erosion control.",
+          "Restoration of suitable degraded agricultural land.",
+          "Protection of existing vegetation where appropriate.",
+          "Agroforestry and locally suitable tree planting.",
+          "Sustainable land-use practices.",
+          "Organic matter management and composting.",
+          "Vegetation protection and regeneration.",
+          "Community participation in natural-resource management.",
+          "Responsible management of agricultural land and surrounding ecosystems."
+        ],
+        "notes": [
+          "Restoration activities will be selected according to local ecological conditions, land rights, species suitability and the needs of surrounding communities."
+        ]
+      },
+      {
+        "id": "water-management-and-irrigation",
+        "number": "7.3",
+        "title": "Water Management and Irrigation",
+        "intro": [
+          "Responsible water management is central to sustainable agriculture in Somalia.",
+          "DHEEFSO aims to support efficient water use while avoiding practices that place excessive pressure on groundwater, rivers or other shared resources."
+        ],
+        "listHeading": "Potential activities include:",
+        "items": [
+          "Assessment of available water resources.",
+          "Improvement and maintenance of suitable irrigation systems.",
+          "Introduction of efficient irrigation methods.",
+          "Water harvesting and storage where technically appropriate.",
+          "Soil-moisture conservation.",
+          "Farmer training on efficient water use.",
+          "Protection of waterways and natural drainage.",
+          "Community-based water-management arrangements.",
+          "Awareness of responsible groundwater use."
+        ],
+        "notes": [
+          "Water-related investments will be guided by technical assessments and consideration of the needs of neighbouring communities and the environment."
+        ]
+      },
+      {
+        "id": "livestock-production",
+        "number": "7.4",
+        "title": "Livestock Production",
+        "intro": [
+          "Livestock is an important component of rural livelihoods and integrated agricultural systems in Somalia.",
+          "DHEEFSO aims to promote improved livestock management through appropriate training, fodder production and sustainable use of agricultural resources."
+        ],
+        "listHeading": "Potential activities include:",
+        "items": [
+          "Goat and sheep production.",
+          "Livestock husbandry training.",
+          "Fodder cultivation and conservation.",
+          "Sustainable animal feeding practices.",
+          "Livestock housing and welfare awareness.",
+          "Animal health education and referral to qualified veterinary services.",
+          "Better management of animal waste.",
+          "Integration of livestock with crop production.",
+          "Improved use of crop residues as animal feed where appropriate."
+        ],
+        "notes": []
+      },
+      {
+        "id": "agricultural-inputs-and-farm-services",
+        "number": "7.5",
+        "title": "Agricultural Inputs and Farm Services",
+        "intro": [
+          "Subject to its capacity and applicable regulations, DHEEFSO aims to facilitate access to appropriate agricultural inputs and services."
+        ],
+        "listHeading": "These may include:",
+        "items": [
+          "Quality seeds and planting materials.",
+          "Farming tools and equipment.",
+          "Soil-improvement materials.",
+          "Irrigation supplies.",
+          "Agricultural machinery services.",
+          "Technical advice and extension support.",
+          "Information on appropriate input use and safe handling."
+        ],
+        "notes": [
+          "The cooperative will seek to promote reliable supply arrangements and responsible agricultural input management."
+        ]
+      },
+      {
+        "id": "post-harvest-handling-storage-and-processing",
+        "number": "7.6",
+        "title": "Post-Harvest Handling, Storage and Processing",
+        "intro": [
+          "Reducing post-harvest losses can improve farmer incomes, food availability and the commercial value of agricultural produce."
+        ],
+        "listHeading": "DHEEFSO aims to promote:",
+        "items": [
+          "Improved harvesting and handling techniques.",
+          "Appropriate drying and storage practices.",
+          "Grain and seed storage.",
+          "Produce aggregation.",
+          "Basic agricultural processing.",
+          "Packaging and quality improvement.",
+          "Market information and buyer connections.",
+          "Collective marketing arrangements.",
+          "Farmer-led agribusiness development."
+        ],
+        "notes": [
+          "Future investments in storage and processing facilities will depend on feasibility, demand, financing and operational capacity."
+        ]
+      },
+      {
+        "id": "farmer-training-and-agricultural-extension",
+        "number": "7.7",
+        "title": "Farmer Training and Agricultural Extension",
+        "intro": [
+          "DHEEFSO intends to strengthen farmers' knowledge through practical training, demonstrations and collaboration with qualified agricultural professionals."
+        ],
+        "listHeading": "Training topics may include:",
+        "items": [
+          "Climate-resilient farming.",
+          "Crop selection and seasonal planning.",
+          "Soil fertility and conservation.",
+          "Water-efficient irrigation.",
+          "Integrated pest management.",
+          "Sustainable livestock production.",
+          "Fodder management.",
+          "Post-harvest handling.",
+          "Agricultural business management.",
+          "Market access and cooperative marketing.",
+          "Environmental protection and resource management."
+        ],
+        "notes": [
+          "Training programmes will be adapted to local needs, farmers' experience and available technical resources."
+        ]
+      },
+      {
+        "id": "agricultural-business-and-market-development",
+        "number": "7.8",
+        "title": "Agricultural Business and Market Development",
+        "intro": [
+          "DHEEFSO aims to help farmers improve the commercial performance of their agricultural activities."
+        ],
+        "listHeading": "Potential activities include:",
+        "items": [
+          "Agricultural market information.",
+          "Connections with produce buyers and traders.",
+          "Collective purchasing and marketing where feasible.",
+          "Basic farm business planning.",
+          "Cost and income recordkeeping.",
+          "Value addition and product quality improvement.",
+          "Support for women- and youth-led agricultural enterprises.",
+          "Identification of viable local and regional markets."
+        ],
+        "notes": []
+      }
+    ],
+    "climateResilientAgriculture": {
+      "title": "Sustainable and Climate-Resilient Agriculture",
+      "intro": [
+        "DHEEFSO promotes an agricultural approach that considers both production needs and the long-term condition of natural resources."
+      ],
+      "listHeading": "Its approach includes the following principles:",
+      "principles": [
+        {
+          "title": "Climate-informed agricultural planning",
+          "description": "Considering seasonal conditions, rainfall variability, and drought and flood risks when selecting crops and planning farming activities."
+        },
+        {
+          "title": "Soil protection",
+          "description": "Maintaining soil cover, reducing erosion and improving soil organic matter through appropriate management practices."
+        },
+        {
+          "title": "Water efficiency",
+          "description": "Using suitable irrigation systems and encouraging responsible water use."
+        },
+        {
+          "title": "Crop diversification",
+          "description": "Reducing dependence on a narrow range of crops where diversification is technically and economically appropriate."
+        },
+        {
+          "title": "Ecosystem protection",
+          "description": "Conserving existing vegetation and restoring suitable degraded areas without damaging natural habitats."
+        },
+        {
+          "title": "Integrated farming",
+          "description": "Connecting crop production, livestock, fodder and agricultural residues where beneficial."
+        },
+        {
+          "title": "Community participation",
+          "description": "Involving local people in decisions affecting agricultural land, water and shared natural resources."
+        },
+        {
+          "title": "Economic sustainability",
+          "description": "Promoting farming practices that farmers can maintain and afford beyond the initial period of technical or financial support."
+        }
+      ]
+    }
+  },
+  "whoWeServe": {
+    "intro": "DHEEFSO's intended beneficiaries include individuals and groups whose livelihoods depend on agriculture, livestock and rural natural resources.",
+    "primaryBeneficiaries": [
+      "Smallholder farmers.",
+      "Crop-producing households.",
+      "Livestock keepers.",
+      "Mixed crop-livestock farmers.",
+      "Women engaged in farming and agricultural enterprises.",
+      "Young people seeking agricultural employment.",
+      "Rural households facing agricultural and environmental challenges.",
+      "Farmer groups and community-based organizations."
+    ],
+    "secondaryBeneficiaries": [
+      "Agricultural traders and produce buyers.",
+      "Agricultural input suppliers.",
+      "Local agricultural service providers.",
+      "Rural small businesses.",
+      "Agricultural processors and storage operators.",
+      "Relevant local government institutions.",
+      "Research, education and technical institutions.",
+      "Other organizations supporting agricultural and rural development."
+    ],
+    "notes": [
+      "Beneficiary numbers and participation targets will be determined through verified membership records, local assessments and the scale of available resources.",
+      "DHEEFSO will seek to promote transparent selection criteria and equitable opportunities for eligible community members."
+    ],
+    "inclusion": {
+      "title": "Gender Equality, Youth and Social Inclusion",
+      "intro": [
+        "DHEEFSO recognizes that women and young people can make significant contributions to agricultural productivity, food security, innovation and rural enterprise development."
+      ],
+      "listHeading": "The cooperative intends to promote inclusive participation through:",
+      "items": [
+        "Equal opportunities to participate in agricultural training.",
+        "Support for women-led and youth-led agribusiness initiatives.",
+        "Inclusive community consultations.",
+        "Opportunities to participate in cooperative decision-making.",
+        "Agricultural skills development and peer learning.",
+        "Fair access to relevant services and market information.",
+        "Safe and respectful participation in organizational activities."
+      ],
+      "notes": [
+        "Participation will be guided by local circumstances, practical needs and fair access to opportunities."
+      ]
+    }
+  },
+  "whereWeWork": {
+    "primaryFocus": {
+      "title": "Primary Local Focus",
+      "intro": [
+        "DHEEFSO AGRO COOPERATIVE identifies Afgoye, Lower Shabelle Region, Somalia, as an important focal area for its agricultural development activities.",
+        "Its local approach is intended to reflect the needs and priorities of farming households, livestock keepers and other community members whose livelihoods depend on agriculture and natural resources."
+      ],
+      "listHeading": "The cooperative's local engagement priorities include:",
+      "items": [
+        "Understanding the agricultural needs of farmers and livestock keepers.",
+        "Identifying suitable agricultural land and production opportunities.",
+        "Assessing water availability and existing irrigation practices.",
+        "Understanding local environmental challenges and climate-related risks.",
+        "Identifying opportunities for crop production, horticulture and livestock development.",
+        "Supporting the participation of women and young people in agricultural enterprises.",
+        "Strengthening cooperation among farmers, community representatives and relevant institutions.",
+        "Identifying practical opportunities for agricultural storage, processing and marketing."
+      ],
+      "notes": []
+    },
+    "communityApproach": {
+      "title": "Community-Based Approach",
+      "paragraphs": [
+        "DHEEFSO intends to involve local communities throughout agricultural planning, implementation and monitoring.",
+        "Community members should have opportunities to identify priorities, contribute local knowledge, participate in training and help determine how shared natural resources are managed.",
+        "The cooperative will seek to ensure that proposed activities reflect local land-use arrangements, water availability, agricultural seasons, community priorities and environmental conditions."
+      ]
+    },
+    "geographicExpansion": {
+      "title": "Geographic Expansion",
+      "paragraphs": [
+        "Where resources and operational capacity permit, DHEEFSO may extend its services to other suitable agricultural communities in Somalia.",
+        "Expansion will be guided by local needs assessments, community consultation, technical feasibility, security, access to markets and the availability of appropriate partnerships.",
+        "The cooperative will not present proposed locations as established operational offices or confirmed project sites unless these have been verified."
+      ]
+    },
+    "communityParticipation": {
+      "title": "Community Participation and Local Partnerships",
+      "intro": [
+        "DHEEFSO aims to build its work around community knowledge, local priorities and shared responsibility."
+      ],
+      "listHeading": "Community participation may involve:",
+      "items": [
+        "Consultation with farmers and community representatives.",
+        "Identification of agricultural challenges and opportunities.",
+        "Joint planning of suitable activities.",
+        "Community involvement in environmental protection.",
+        "Local arrangements for shared water resources.",
+        "Farmer training and demonstration activities.",
+        "Feedback and grievance mechanisms.",
+        "Participatory monitoring of agricultural activities."
+      ],
+      "notes": [
+        "The cooperative will seek appropriate coordination with relevant local authorities, agricultural institutions and community organizations.",
+        "Partnerships will be described as confirmed only when supported by appropriate evidence, such as an agreement, official correspondence or letter of support."
+      ]
+    },
+    "partnerships": {
+      "title": "Partnerships and Institutional Coordination",
+      "intro": [
+        "DHEEFSO intends to develop appropriate partnerships to strengthen agricultural services, technical knowledge, market access and institutional capacity."
+      ],
+      "listHeading": "Potential partners include:",
+      "items": [
+        "Federal and relevant state agricultural authorities.",
+        "Local administrations and community institutions.",
+        "Agricultural research and educational institutions.",
+        "Farmer groups and agricultural cooperatives.",
+        "Qualified environmental and water-management specialists.",
+        "Non-governmental and development organizations.",
+        "Agricultural input suppliers.",
+        "Produce buyers, traders and processors.",
+        "Private-sector agribusinesses.",
+        "Technical and financial institutions."
+      ],
+      "notes": [
+        "The nature of each partnership will depend on shared objectives, technical requirements, local priorities and available resources.",
+        "DHEEFSO will not claim formal partnerships or institutional endorsements without supporting documentation."
+      ]
+    }
+  },
+  "governanceFinance": {
+    "intro": "DHEEFSO aims to maintain a transparent organizational structure that supports member participation, effective management and accountability.",
+    "governanceBodies": [
+      {
+        "id": "general-assembly",
+        "title": "General Assembly",
+        "intro": [
+          "The General Assembly represents the cooperative's members and serves as its principal member-oversight body, in accordance with the cooperative's constitution and bylaws."
+        ],
+        "listHeading": "Responsibilities may include:",
+        "items": [
+          "Reviewing organizational performance.",
+          "Approving major strategic priorities.",
+          "Electing or appointing the Board according to the governing documents.",
+          "Reviewing annual reports and financial statements.",
+          "Promoting accountability to members."
+        ],
+        "notes": []
+      },
+      {
+        "id": "board-of-directors",
+        "title": "Board of Directors",
+        "intro": [
+          "The Board provides strategic oversight and guides the cooperative's institutional development."
+        ],
+        "listHeading": "Responsibilities may include:",
+        "items": [
+          "Approving strategic plans and annual budgets.",
+          "Reviewing management and financial performance.",
+          "Overseeing organizational policies.",
+          "Monitoring institutional risks.",
+          "Supporting partnerships and organizational development.",
+          "Promoting transparency and compliance."
+        ],
+        "notes": []
+      },
+      {
+        "id": "executive-director-or-general-manager",
+        "title": "Executive Director or General Manager",
+        "intro": [
+          "The Executive Director or General Manager is responsible for day-to-day management, subject to the cooperative's governing arrangements."
+        ],
+        "listHeading": "Responsibilities may include:",
+        "items": [
+          "Coordinating agricultural activities and services.",
+          "Managing staff and operational resources.",
+          "Preparing work plans and budgets.",
+          "Coordinating community engagement.",
+          "Maintaining operational records.",
+          "Preparing management and performance reports.",
+          "Supporting partnerships and market development."
+        ],
+        "notes": []
+      }
+    ],
+    "departments": {
+      "title": "Proposed Operational Departments",
+      "intro": [],
+      "listHeading": "Depending on organizational size, resources and actual staffing, DHEEFSO may establish the following functional areas:",
+      "items": [
+        "Agriculture and Crop Production.",
+        "Livestock and Fodder Development.",
+        "Environment, Land and Water Management.",
+        "Finance and Administration.",
+        "Procurement and Supply.",
+        "Marketing, Sales and Agribusiness.",
+        "Human Resources and Capacity Development.",
+        "Monitoring, Evaluation and Learning."
+      ],
+      "notes": [
+        "Some responsibilities may be combined in a small organization, provided that duties, reporting arrangements and financial controls remain clear."
+      ]
+    },
+    "financialManagement": {
+      "title": "Financial Management and Procurement",
+      "intro": [
+        "DHEEFSO aims to maintain sound financial management practices that protect cooperative resources and support responsible operations."
+      ],
+      "listHeading": "Its financial-management framework should include:",
+      "items": [
+        "Approved budgets and expenditure plans.",
+        "Documented financial authorization procedures.",
+        "Accurate accounting records.",
+        "Supporting documentation for transactions.",
+        "Appropriate separation of financial responsibilities.",
+        "Regular cash and bank reconciliations.",
+        "Transparent procurement procedures.",
+        "Competitive supplier selection where applicable.",
+        "Inventory and asset registers.",
+        "Conflict-of-interest management.",
+        "Periodic financial reporting.",
+        "Independent audit or financial review where required."
+      ],
+      "notes": [
+        "Financial procedures will be developed and implemented in line with the cooperative's actual capacity, governing documents and applicable requirements."
+      ]
+    },
+    "supportingDocuments": {
+      "title": "Organizational Capacity and Documentation",
+      "intro": [
+        "To demonstrate its credibility and readiness to work with institutions, development partners and potential funders, DHEEFSO should maintain an organized set of supporting documents."
+      ],
+      "listHeading": "These may include:",
+      "items": [
+        "Cooperative registration certificate.",
+        "Constitution and bylaws.",
+        "Organizational structure.",
+        "Official address and contact details.",
+        "Staff and technical personnel records.",
+        "Agricultural activity reports.",
+        "Financial statements and accounting records.",
+        "Financial-management and procurement policies.",
+        "Environmental and social procedures.",
+        "Monitoring reports and documented results."
+      ],
+      "notes": [
+        "Any information about previous projects, organizational experience, assets, membership or achievements should be supported by available records.",
+        "Where information is not yet available, it should be completed when verified rather than replaced with unsupported claims."
+      ]
+    }
+  },
+  "impactSustainability": {
+    "responsibility": {
+      "title": "Environmental and Social Responsibility",
+      "intro": [
+        "Environmental and social responsibility will be incorporated into DHEEFSO's agricultural planning and operational decisions."
+      ],
+      "listHeading": "Priority considerations include:",
+      "items": [
+        "Protection of soil fertility and vegetation.",
+        "Prevention of avoidable land degradation.",
+        "Responsible water extraction and irrigation.",
+        "Respect for land rights and community access arrangements.",
+        "Appropriate selection of restoration species.",
+        "Avoidance of damage to sensitive habitats.",
+        "Safe handling of agricultural inputs.",
+        "Occupational health and safety.",
+        "Fair participation and non-discrimination.",
+        "Prevention of avoidable harm to neighbouring communities.",
+        "Accessible channels for complaints and feedback."
+      ],
+      "notes": [
+        "Activities with potential environmental or social impacts should be assessed before implementation, with appropriate mitigation measures established."
+      ]
+    },
+    "monitoring": {
+      "title": "Monitoring, Evaluation and Organizational Learning",
+      "intro": [
+        "DHEEFSO intends to use practical monitoring systems to understand progress, improve implementation and assess whether its activities generate meaningful benefits."
+      ],
+      "listHeading": "Potential indicators include:",
+      "items": [
+        "Number of farmers participating in agricultural training.",
+        "Number of farmers adopting improved farming practices.",
+        "Area of land under improved agricultural management.",
+        "Area of suitable land restored or protected.",
+        "Adoption of improved soil-conservation methods.",
+        "Number of farms using more efficient water-management practices.",
+        "Changes in crop production and post-harvest losses, where measurable.",
+        "Number of women and young people participating in activities.",
+        "Number of farmers connected to markets.",
+        "Changes in agricultural income where reliable data are available.",
+        "Number of community groups participating in resource management."
+      ],
+      "notes": [
+        "Baselines, targets, data-collection methods and reporting frequency will be established according to the scale and objectives of each activity.",
+        "DHEEFSO will seek to document both achievements and implementation challenges so that future agricultural activities can benefit from lessons learned."
+      ]
+    },
+    "riskManagement": {
+      "title": "Risk Management",
+      "intro": "The cooperative recognizes that agricultural activities may be affected by environmental, operational, financial and market-related risks.",
+      "risks": [
+        {
+          "risk": "Drought and irregular rainfall",
+          "approach": "Promote suitable crops, seasonal planning and efficient water use."
+        },
+        {
+          "risk": "Flooding and erosion",
+          "approach": "Assess local exposure and implement appropriate conservation measures."
+        },
+        {
+          "risk": "Soil degradation",
+          "approach": "Encourage soil protection, organic matter management and sustainable land use."
+        },
+        {
+          "risk": "Water scarcity",
+          "approach": "Assess available resources and prioritize responsible water management."
+        },
+        {
+          "risk": "Agricultural pests and diseases",
+          "approach": "Promote monitoring, farmer education and appropriate technical advice."
+        },
+        {
+          "risk": "Market price fluctuations",
+          "approach": "Improve market information, diversification and buyer connections."
+        },
+        {
+          "risk": "Post-harvest losses",
+          "approach": "Promote better handling, drying, storage and processing."
+        },
+        {
+          "risk": "Limited technical capacity",
+          "approach": "Provide training and seek qualified technical support."
+        },
+        {
+          "risk": "Low community participation",
+          "approach": "Consult local communities and use inclusive planning."
+        },
+        {
+          "risk": "Financial-management weaknesses",
+          "approach": "Maintain documented procedures, reconciliations and oversight."
+        },
+        {
+          "risk": "Security and access constraints",
+          "approach": "Assess local conditions and adapt operational plans."
+        },
+        {
+          "risk": "Environmental or social harm",
+          "approach": "Apply appropriate screening, safeguards and monitoring."
+        }
+      ],
+      "notes": [
+        "Risk-management measures will be reviewed as operating conditions and agricultural needs change."
+      ]
+    },
+    "sustainability": {
+      "title": "Sustainability Strategy",
+      "intro": [
+        "DHEEFSO aims to build agricultural activities that can continue producing benefits over the long term.",
+        "Its sustainability strategy includes five dimensions."
+      ],
+      "dimensions": [
+        {
+          "id": "environmental-sustainability",
+          "number": "18.1",
+          "title": "Environmental Sustainability",
+          "description": "Promote soil conservation, responsible water use, appropriate ecosystem restoration and sustainable agricultural land management."
+        },
+        {
+          "id": "economic-sustainability",
+          "number": "18.2",
+          "title": "Economic Sustainability",
+          "description": "Encourage productive farming, reduced post-harvest losses, value addition, collective marketing and viable agricultural enterprises."
+        },
+        {
+          "id": "social-sustainability",
+          "number": "18.3",
+          "title": "Social Sustainability",
+          "description": "Support community ownership, fair participation, local knowledge and opportunities for women and young people."
+        },
+        {
+          "id": "institutional-sustainability",
+          "number": "18.4",
+          "title": "Institutional Sustainability",
+          "description": "Strengthen cooperative governance, management systems, member participation and relationships with relevant institutions."
+        },
+        {
+          "id": "technical-sustainability",
+          "number": "18.5",
+          "title": "Technical Sustainability",
+          "description": "Promote practical technologies, farmer training, local maintenance arrangements and farming methods suited to available resources."
+        }
+      ],
+      "notes": [
+        "The cooperative will seek to reduce dependence on short-term external support by developing its agricultural services, member participation and appropriate revenue-generating activities."
+      ]
+    },
+    "developmentPriorities": {
+      "title": "Organizational Development Priorities",
+      "intro": [
+        "DHEEFSO intends to strengthen its institutional capacity progressively."
+      ],
+      "listHeading": "Priority areas include:",
+      "priorities": [
+        {
+          "title": "Governance",
+          "description": "Maintain appropriate governing documents, clear responsibilities and member accountability."
+        },
+        {
+          "title": "Agricultural capacity",
+          "description": "Improve technical knowledge and access to qualified agricultural advice."
+        },
+        {
+          "title": "Community engagement",
+          "description": "Strengthen relationships with farmers and local community representatives."
+        },
+        {
+          "title": "Financial systems",
+          "description": "Maintain reliable accounting, procurement and financial reporting procedures."
+        },
+        {
+          "title": "Market development",
+          "description": "Improve agricultural value-chain relationships and commercial opportunities."
+        },
+        {
+          "title": "Environmental management",
+          "description": "Integrate soil, water and ecosystem considerations into operational planning."
+        },
+        {
+          "title": "Monitoring and reporting",
+          "description": "Maintain records of activities, beneficiaries, results and lessons learned."
+        },
+        {
+          "title": "Partnership development",
+          "description": "Establish appropriate working relationships with relevant technical and institutional partners."
+        }
+      ],
+      "notes": [
+        "Implementation priorities will depend on available resources, organizational readiness and verified community needs."
+      ]
+    }
+  },
+  "contactUs": {
+    "conclusion": [
+      "DHEEFSO AGRO COOPERATIVE is committed to contributing to a stronger, more productive and environmentally sustainable agricultural sector in Somalia.",
+      "By connecting agricultural development with ecosystem restoration, responsible water management, soil conservation, livestock production, farmer training and community participation, the cooperative seeks to strengthen rural livelihoods and support the long-term resilience of agricultural communities.",
+      "Its local focus on Afgoye district and surrounding areas of Lower Shabelle Region provides an important foundation for community-based agricultural development, subject to confirmation of operating sites and local arrangements.",
+      "Through responsible governance, cooperation, technical capacity-building and practical agricultural services, DHEEFSO aims to support farmers in improving production, protecting natural resources and developing more sustainable economic opportunities."
+    ],
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "tel"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email"
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea"
+        }
+      ]
+    }
+  }
+}

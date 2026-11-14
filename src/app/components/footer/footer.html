@@ -1,0 +1,42 @@
+@if (site(); as siteInfo) {
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section class="footer__about" appReveal>
+        <img [src]="siteInfo.logo" [alt]="siteInfo.name + ' logo'" width="56" height="56" />
+        <h2>{{ siteInfo.name }}</h2>
+        <p class="footer__tagline">{{ siteInfo.tagline }}</p>
+        <p class="footer__country">{{ siteInfo.country }}</p>
+      </section>
+
+      <nav class="footer__links" aria-label="Footer" appReveal [appRevealDelay]="150">
+        <h3>Quick Links</h3>
+        <ul>
+          @for (link of siteInfo.navigation; track link.path) {
+            <li>
+              <a [routerLink]="link.path">{{ link.label }}</a>
+            </li>
+          }
+        </ul>
+      </nav>
+
+      <section class="footer__contact" appReveal [appRevealDelay]="300">
+        <h3>Contact</h3>
+        <address>
+          <p>{{ siteInfo.contact.address }}</p>
+          <p>
+            @for (phone of siteInfo.contact.phones; track phone; let last = $last) {
+              <a [href]="'tel:' + phone">{{ phone }}</a>@if (!last) {<span> / </span>}
+            }
+          </p>
+          <p>
+            <a [href]="'mailto:' + siteInfo.contact.email">{{ siteInfo.contact.email }}</a>
+          </p>
+        </address>
+      </section>
+    </div>
+
+    <div class="footer__bottom" appReveal [appRevealDelay]="450">
+      <p>&copy; {{ year }} {{ siteInfo.name }}. All rights reserved.</p>
+    </div>
+  </footer>
+}

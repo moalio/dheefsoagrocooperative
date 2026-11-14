@@ -1,0 +1,75 @@
+<!-- Hero -->
+@if (site(); as siteInfo) {
+  <section class="hero" [style.background-image]="heroImage">
+
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <h1>{{ siteInfo.name }}</h1>
+      <p class="hero__tagline">{{ siteInfo.tagline }}</p>
+      <p class="hero__country">{{ siteInfo.country }}</p>
+      <p class="hero__sectors">{{ siteInfo.sectors.join(' | ') }}</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--gold" routerLink="/contact-us">Join Us</a>
+        <a class="btn btn--outline" routerLink="/contact-us">Contact Us</a>
+      </div>
+    </div>
+  </section>
+}
+
+<!-- Key focus areas -->
+@if (work(); as workContent) {
+  <section class="section">
+    <div class="container">
+      <app-section-title title="What We Do" appReveal />
+
+      <div class="grid grid--4 focus">
+        @for (area of workContent.areas; track area.id; let i = $index) {
+          <app-card
+            appReveal
+            [appRevealDelay]="(i % 4) * 120"
+            [title]="area.title"
+            [number]="area.number"
+            link="/what-we-do"
+            [fragment]="area.id"
+          >
+            <p>{{ area.intro[0] }}</p>
+          </app-card>
+        }
+      </div>
+    </div>
+  </section>
+}
+
+<!-- Executive Summary -->
+@if (home(); as homeContent) {
+  <section class="section section--alt">
+    <div class="container summary">
+      <app-section-title title="Executive Summary" align="left" appReveal />
+      @for (paragraph of homeContent.executiveSummary; track $index) {
+        <p appReveal [appRevealDelay]="$index * 120">{{ paragraph }}</p>
+      }
+    </div>
+  </section>
+}
+
+<!-- Photo strip -->
+@if (galleryImages.length) {
+  <section class="section">
+    <div class="container">
+      <app-gallery [images]="galleryImages" />
+    </div>
+  </section>
+}
+
+<!-- Call to action -->
+<section class="section section--green text-center">
+  <div class="container">
+    <h2 appReveal>Growing Together, Prosperity for All</h2>
+    <div class="hero__actions" appReveal [appRevealDelay]="200">
+      <a class="btn btn--gold" routerLink="/contact-us">Join Us</a>
+      <a class="btn btn--outline" routerLink="/contact-us">Contact Us</a>
+    </div>
+  </div>
+</section>

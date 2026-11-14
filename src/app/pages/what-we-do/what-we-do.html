@@ -1,0 +1,79 @@
+@if (work(); as data) {
+  <!-- Services -->
+  <section class="services">
+    <div class="container">
+      <header class="titlepage" appReveal>
+        <span>What We Do</span>
+        <h2>SERVICES WE OFFER</h2>
+      </header>
+
+      <div class="services__grid">
+        @for (area of data.areas; track area.id; let i = $index) {
+          @let media = mediaFor(area.id);
+          <div class="services__item" [id]="area.id" appReveal [appRevealDelay]="(i % 3) * 120">
+            <article class="services_box">
+              <figure>
+                <div class="services_box__placeholder">{{ area.number }}</div>
+                <img
+                  [src]="imageFor(area.title)"
+                  [alt]="area.title"
+                  loading="lazy"
+                  (error)="$any($event.target).style.display = 'none'"
+                />
+              </figure>
+
+              <div class="veget">
+                <h3>{{ area.title }}</h3>
+
+                @for (paragraph of area.intro; track $index) {
+                  <p>{{ paragraph }}</p>
+                }
+
+                @if (area.listHeading) {
+                  <h4>{{ area.listHeading }}</h4>
+                }
+
+                <ul class="list-check">
+                  @for (item of area.items; track $index) {
+                    <li>{{ item }}</li>
+                  }
+                </ul>
+
+                @for (note of area.notes; track $index) {
+                  <p class="veget__note">{{ note }}</p>
+                }
+              </div>
+            </article>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="section section--green" id="climate-resilient-agriculture">
+    <div class="container">
+      <app-section-title [title]="data.climateResilientAgriculture.title" />
+
+      @for (paragraph of data.climateResilientAgriculture.intro; track $index) {
+        <p class="principles__intro">{{ paragraph }}</p>
+      }
+      <p class="principles__intro">
+        <strong>{{ data.climateResilientAgriculture.listHeading }}</strong>
+      </p>
+
+      <div class="grid grid--4 principles">
+        @for (principle of data.climateResilientAgriculture.principles; track principle.title; let i = $index) {
+          <app-card [title]="principle.title" [number]="i + 1">
+            <p>{{ principle.description }}</p>
+          </app-card>
+        }
+      </div>
+    </div>
+  </section>
+}
+
+<!-- Call to action -->
+<section class="section text-center">
+  <div class="container">
+    <a class="btn" routerLink="/contact-us">Contact Us</a>
+  </div>
+</section>

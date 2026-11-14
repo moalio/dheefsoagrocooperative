@@ -1,0 +1,89 @@
+<app-page-banner title="Contact Us" />
+
+@if (contact(); as data) {
+  <!-- Conclusion -->
+  <section class="section">
+    <div class="container text-block">
+      <app-section-title title="Conclusion" align="left" />
+      @for (paragraph of data.conclusion; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+    </div>
+  </section>
+
+  <!-- Contact details and form -->
+  <section class="section section--alt">
+    <div class="container grid grid--2">
+      <!-- Details -->
+      @if (site(); as siteInfo) {
+        <div class="card details">
+          <h3>Get in Touch</h3>
+          <address>
+            <p>
+              <strong>Address</strong><br />
+              {{ siteInfo.contact.address }}
+            </p>
+            <p>
+              <strong>Phone</strong><br />
+              @for (phone of siteInfo.contact.phones; track phone; let last = $last) {
+                <a [href]="'tel:' + phone">{{ phone }}</a>@if (!last) {<span> / </span>}
+              }
+            </p>
+            <p>
+              <strong>Email</strong><br />
+              <a [href]="'mailto:' + siteInfo.contact.email">{{ siteInfo.contact.email }}</a>
+            </p>
+          </address>
+        </div>
+      }
+
+      <!-- Form -->
+      <form class="card form" [formGroup]="form" (ngSubmit)="send()" novalidate>
+        <h3>Send Us a Message</h3>
+
+        @for (field of data.form.fields; track field.name) {
+          <div class="form__group">
+            <label [for]="'field-' + field.name">{{ field.label }}</label>
+
+            @if (field.type === 'textarea') {
+              <textarea
+                [id]="'field-' + field.name"
+                [formControlName]="field.name"
+                rows="5"
+                [class.is-invalid]="hasError(field.name)"
+              ></textarea>
+            } @else {
+              <input
+                [id]="'field-' + field.name"
+                [type]="field.type"
+                [formControlName]="field.name"
+                [class.is-invalid]="hasError(field.name)"
+              />
+            }
+
+            @if (hasError(field.name)) {
+              <small class="form__error">
+                {{ field.type === 'email' ? 'Please enter a valid email address.' : 'Please fill in this field.' }}
+              </small>
+            }
+          </div>
+        }
+
+        <button class="btn" type="submit" [disabled]="status() === 'sending'">
+          {{ status() === 'sending' ? 'Sending...' : 'Send Message' }}
+        </button>
+
+        @if (status() === 'sent') {
+          <p class="form__status form__status--ok" role="status">
+            Thank you. Your message has been sent.
+          </p>
+        }
+        @if (status() === 'error') {
+          <p class="form__status form__status--error" role="alert">
+            Your message could not be sent. Please try again or call us.
+          </p>
+        }
+      </form>
+    </div>
+  </section>
+}

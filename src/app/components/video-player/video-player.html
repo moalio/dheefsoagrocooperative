@@ -1,0 +1,10 @@
+<figure class="video">
+  @if (autoplay()) {
+    <video [src]="path()" autoplay muted loop playsinline></video>
+  } @else {
+    <video [src]="path()" [poster]="poster() ?? ''" controls preload="metadata" playsinline></video>
+  }
+  @if (caption()) {
+    <figcaption>{{ caption() }}</figcaption>
+  }
+</figure>

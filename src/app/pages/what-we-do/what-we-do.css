@@ -1,0 +1,317 @@
+/* Sticky sub-menu under the main navbar */
+.submenu {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 50;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(18, 65, 22, 0.06);
+}
+
+.submenu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.6rem 0;
+}
+
+.submenu__list a {
+  flex: none;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--green-900);
+  white-space: nowrap;
+  background: var(--green-100);
+  border-radius: 999px;
+}
+
+.submenu__list a.is-active {
+  font-weight: 700;
+  color: var(--white);
+  background: var(--green-700);
+}
+
+.submenu__list a:hover {
+  color: var(--white);
+  text-decoration: none;
+  background: var(--green-700);
+}
+
+/* Areas. The offset keeps the title below the two sticky bars. */
+.area {
+  padding-top: 1.5rem;
+  scroll-margin-top: calc(var(--header-height) + var(--submenu-height, 64px));
+}
+
+.area__header {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.area__header h2 {
+  margin: 0;
+}
+
+.area__number {
+  display: grid;
+  flex: none;
+  width: 2.8rem;
+  height: 2.8rem;
+  place-items: center;
+  font-weight: 700;
+  color: var(--green-900);
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+/* Text on the left, photos and video on the right */
+.area__layout {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+}
+
+.area__layout--text-only {
+  max-width: 900px;
+  grid-template-columns: 1fr;
+}
+
+.area__heading {
+  margin: 1.25rem 0 0.75rem;
+  font-size: 1.05rem;
+  color: var(--green-700);
+}
+
+/* Activities as small check cards */
+.area__list {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.area__list li {
+  position: relative;
+  padding: 0.6rem 0.75rem 0.6rem 2.1rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.area__list li::before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.75rem;
+  font-weight: 700;
+  color: var(--green-500);
+  content: '\2713';
+}
+
+.area__note {
+  padding: 1rem;
+  margin: 1.5rem 0 0;
+  font-style: italic;
+  background: var(--green-100);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.area__media {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Principles */
+.principles__intro {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.principles {
+  margin-top: 2rem;
+  color: var(--text);
+}
+
+@media (max-width: 860px) {
+  .area__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .area__media {
+    order: -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .area__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .submenu__list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .submenu__list::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Services: layout from the Agropro template */
+.services {
+  padding: 4rem 0;
+  background: var(--white);
+}
+
+.titlepage {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.titlepage span {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.titlepage h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.services__grid {
+  display: grid;
+  gap: 2rem;
+  align-items: stretch;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.services__item {
+  display: flex;
+  scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+.services_box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.services_box:hover {
+  box-shadow: 0 12px 28px rgba(18, 65, 22, 0.18);
+  transform: translateY(-6px);
+}
+
+.services_box figure {
+  display: flex;
+  height: 230px;
+  margin: 0;
+  background: var(--green-100);
+}
+
+.services_box figure img {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services_box__placeholder {
+  display: grid;
+  flex: 1;
+  place-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--green-900), var(--green-700));
+}
+
+.veget {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.veget h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+}
+
+.veget h4 {
+  margin: 0.5rem 0 0.6rem;
+  font-size: 1rem;
+  color: var(--green-700);
+}
+
+.veget .list-check {
+  margin-bottom: 0;
+}
+
+.veget__note {
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 0;
+  font-size: 0.92rem;
+  font-style: italic;
+  background: var(--green-100);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+}
+
+@media (max-width: 992px) {
+  .services__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding: 2.5rem 0;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Image on top of the number box */
+.services_box figure {
+  position: relative;
+}
+
+.services_box__placeholder {
+  position: absolute;
+  inset: 0;
+}
+
+.services_box figure img {
+  position: relative;
+  width: 100%;
+}
